@@ -1,19 +1,102 @@
-just do the necessary grammatical corrections in my content:
 
-1. we take application in C file, compile it in GCC and we obtain the output, and lets name it as O0.
-2. we model the spec in C Format and test the specification. the outp[ut is obtained and named O1.
-3. compare the outputs O0 and O1. iun order to maintain the same required functionality, both the outputs shopuld be equal.
-    that is, O0 = 01
-4. softcopy of hARDWARE is created using high level languages such as bluespec, chisel.
-5. run our application in this rtl model and and obtain the output as O2.
-6. O2 should be equal to O1 to have the same functionality
-7. then we are splitting the rtl code in to :
-a) processor
-b) peripherals/IPs
 
-PROCESSOR:
-processor code will be synthesizable.
+# Getting started with Digital VLSI SOC Design and Planning
 
-the peripharals/IPs contains:
-    a)macros
-    b) analog IPs
+## Chip Modelling - Summary
+
+## Step 1: Application Compilation
+
+* We take an application in a **C file**, compile it with **GCC**, and obtain the output, named `O0`.
+
+## Step 2: Specification Modeling
+
+* We model the specification in **C format** and test it.
+* The output is obtained and named `O1`.
+
+## Step 3: Output Comparison
+
+* Compare the outputs `O0` and `O1`.
+* To maintain the same required functionality, both outputs should be equal:
+
+```text
+O0 == O1
+```
+
+## Step 4: Hardware Modeling
+
+* A softcopy of the hardware is created using high-level languages such as **Bluespec** or **Chisel**.
+
+## Step 5: RTL Simulation
+
+* Run our application on this **RTL model** and obtain the output as `O2`.
+* For functional equivalence, both outputs should be equal:
+
+```text
+O2 == O1
+```
+
+## Step 6: Splitting RTL Code
+
+The RTL code is split into:
+
+* **Processor**
+* **Peripherals/IPs**
+
+### Processor
+
+* The processor code is synthesizable.
+
+### Peripherals/IPs
+
+The peripherals/IPs contain:
+
+#### 1. **Macros**
+
+   * Blocks that are initially built and later instantiated whenever required.
+#### 2. **Analog IPs**
+
+   * Example: 10-bit ADC, PLL, Clock Multiplier.
+
+## Step 7: SoC Integration
+
+* The **SoC engineer** integrates all these blocks along with GPIOs.
+* Our input application is run on this SoC and the output `O3` is obtained.
+
+## Step 8: Physical Design Flow
+
+* Perform the flow from **RTL to GDS**.
+* A **GDSII file** is created.
+* The GDS file undergoes **DRC/LVS checks**.
+* It is then sent to the foundry (**tapeout**).
+* Receiving the chip from the foundry is called **tapein**.
+
+## Step 9: Board Integration
+
+* The received chip is integrated with peripherals such as USB Controller, Memory, Voltage Regulator, Crystal Oscillator into a board.
+
+## Step 10: Final Application Run
+
+* We send our application to the chip via USB and run it.
+* The output obtained is `O4`.
+
+```text
+O1 == O2 == O3 == O4
+```
+
+## Timeline
+
+* The entire process takes **12–14 months**, of which about **4–6 months** are spent by the foundry to manufacture and deliver the chip.
+
+## Chip Specifications
+
+* Operating frequency: **100–130 MHz**
+
+## Applications
+
+* iWatch
+* Arduino boards
+* TV panels
+* AC applications
+* and more...
+
+
