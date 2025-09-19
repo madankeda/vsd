@@ -1,0 +1,19 @@
+just do the necessary grammatical corrections in my content:
+
+1. we take application in C file, compile it in GCC and we obtain the output, and lets name it as O0.
+2. we model the spec in C Format and test the specification. the outp[ut is obtained and named O1.
+3. compare the outputs O0 and O1. iun order to maintain the same required functionality, both the outputs shopuld be equal.
+    that is, O0 = 01
+4. softcopy of hARDWARE is created using high level languages such as bluespec, chisel.
+5. run our application in this rtl model and and obtain the output as O2.
+6. O2 should be equal to O1 to have the same functionality
+7. then we are splitting the rtl code in to :
+a) processor
+b) peripherals/IPs
+
+PROCESSOR:
+processor code will be synthesizable.
+
+the peripharals/IPs contains:
+    a)macros
+    b) analog IPs
