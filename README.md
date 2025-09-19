@@ -6,5 +6,5 @@
 
 | Week   | Task    | Title   |
 |--------|---------|---------|
-| Week 0 | Task 1 | [Summary of Video](URL) |
-|        | Task 2 | [Tool installation](URL)|
+| Week 0 | Task 1 | [Summary of Video](week0/task1) |
+|        | Task 2 | [Tool installation](week0/task2)|
