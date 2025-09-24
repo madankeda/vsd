@@ -19,7 +19,7 @@ The three important operating conditions that determine the behavior of our sili
 
 ![Alt text](images/pvt.png)
 
-### different flavors of the same cell
+### Different flavors of the same cell
 
 Here, there are three different variations of the same 2-input AND gate:
 
@@ -49,7 +49,7 @@ endmodule
 
 The given design corresponds to the following circuit:
 ### multiple_modules implementation
-![Alt text](multiple_modules_circuit.png)
+![Alt text](images/multiple_modules_circuit.png)
 
 
 here, instances of two sub-modules (sub_module1 and sub_module2) are used in multiple_modules.
@@ -91,7 +91,7 @@ write_verilog -noattr multiple_modules_hier.v
 ```
 The written verilog file can be viewed using gvim or other tool.
 
-![Alt text](multiple_modules_hier.png)
+![Alt text](images/multiple_modules_hier.png)
 
 To write a flattened netlist we use "flatten" 
 ```
@@ -101,14 +101,14 @@ View the synthesized netlist
 ```
 show
 ```
-![Alt text]( .png)
+![Alt text](images/multiple_modules_flat_netlist.png)
 ```
 write_verilog -noattr multiple_modules_flat.v
 ```
-![Alt text](multiple_modules_flat.png)
+![Alt text](images/multiple_modules_flat.png)
 
 
-![Alt text](hier_vs_flat.png)
+![Alt text](images/hier_vs_flat.png)
 
 
 Now let us Synthesize at sub_module level:
@@ -122,7 +122,7 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 show
 ```
-![Alt text](sub_module1.png)
+![Alt text](images/sub_module1.png)
 
 # 3. Various Flop Coding Styles and optimization
 
