@@ -231,7 +231,9 @@ endmodule
 
 ![Alt text](images/dff_async_set_synthesis.png)
 
-![Alt text](images/ddff_async_set_netlist.png)
+![Alt text](images/dff_async_set_netlist.png)
+
+![Alt text](images/flipflop_signal_types.png)
 
 ## Interesting Optimizations
 There are some interesting optimizations done by the logic synthesis tools.
