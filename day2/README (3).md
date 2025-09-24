@@ -90,6 +90,7 @@ Now, write the netlist to a verilog file:
 write_verilog -noattr multiple_modules_hier.v
 ```
 The written verilog file can be viewed using gvim or other tool.
+
 ![Alt text](multiple_modules_hier.png)
 
 To write a flattened netlist we use "flatten" 
@@ -227,6 +228,7 @@ endmodule
 
 ![Alt text](images/dff_async_set_gtkwave.png)
 ### Yosys logic synthesis
+
 ![Alt text](images/dff_async_set_synthesis.png)
 
 ![Alt text](images/ddff_async_set_netlist.png)
@@ -245,6 +247,7 @@ endmodule
 Instead of implementing multiplier cells to multiply by 2, the tool implements shifting operation.
 
 ### Optimization by Yosys
+
 ![Alt text](images/mul2_synthesis.png)
 
 ![Alt text](images/mul2_netlist.png)
@@ -259,6 +262,7 @@ endmodule
 ```
 
 Instead of using multiplier, an optimization is done by the tool:
+
 ![Alt text](images/mult8_synthesis.png)
 
 ![Alt text](images/mult8_netlist.png)
