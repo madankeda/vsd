@@ -145,9 +145,11 @@ endmodule
 
 ### Iverilog and gtkwave simulation output
 ![Alt text](images/dff_asyncres_gtkwave_fullscreen.png)
+
 ![Alt text](images/dff_asyncres_gtkwave.png)
 ### Yosys logic synthesis
 ![Alt text](images/dff_asyncres_synthesis.png)
+
 ![Alt text](images/dff_asyncres_netlist.png)
 
 
@@ -169,9 +171,11 @@ endmodule
 
 ### Iverilog and gtkwave simulation output
 ![Alt text](images/dff_syncres_gtkwave_fullscreen.png)
+
 ![Alt text](images/dff_syncres_gtkwave.png)
 ### Yosys logic synthesis
 ![Alt text](images/dff_syncres_synthesis.png)
+
 ![Alt text](images/dff_syncres_netlist.png)
 
 
@@ -195,9 +199,11 @@ endmodule
 
 ### Iverilog and gtkwave simulation output
 ![Alt text](images/dff_asyncres_syncres_gtkwave_fullscreen.png)
+
 ![Alt text](images/dff_asyncres_syncres_gtkwave.png)
 ### Yosys logic synthesis
 ![Alt text](images/dff_asyncres_syncres_synthesis.png)
+
 ![Alt text](images/dff_asyncres_syncres_netlist.png)
 
 ## D Flip-flop with Asynchronous set  
@@ -218,9 +224,11 @@ endmodule
 
 ### Iverilog and gtkwave simulation output
 ![Alt text](images/dff_async_set_gtkwave_fullscreen.png)
+
 ![Alt text](images/dff_async_set_gtkwave.png)
 ### Yosys logic synthesis
 ![Alt text](images/dff_async_set_synthesis.png)
+
 ![Alt text](images/ddff_async_set_netlist.png)
 
 ## Interesting Optimizations
@@ -238,7 +246,9 @@ Instead of implementing multiplier cells to multiply by 2, the tool implements s
 
 ### Optimization by Yosys
 ![Alt text](images/mul2_synthesis.png)
+
 ![Alt text](images/mul2_netlist.png)
+
 ![Alt text](images/mul2_netlist_verilog.png)
 
 Also for this special case, mult_8.v 
@@ -250,7 +260,9 @@ endmodule
 
 Instead of using multiplier, an optimization is done by the tool:
 ![Alt text](images/mult8_synthesis.png)
+
 ![Alt text](images/mult8_netlist.png)
+
 ![Alt text](images/mult8_netlist_verilog.png)
 
 
