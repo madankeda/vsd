@@ -4,7 +4,6 @@
 
 There are two types of optimizations: **combinational** and **sequential**.
 
----
 
 ## Combinational Optimization
 
@@ -23,7 +22,6 @@ Simplifies the boolean logic to reduce the number of gates / transistors.
 
 ![Alt text](images/boolean_logic_optimization.png)
 
----
 
 ## Sequential Optimization
 
