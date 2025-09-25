@@ -14,6 +14,7 @@ There are two types of optimizations: **combinational** and **sequential**.
 ### Constant Propagation
 
 If the output of a logic circuit evaluates to a constant value, then that circuit is replaced with the constant value.
+
 ![Alt text](images/constant_propagation.png)
 
 ### Boolean Logic Optimization
@@ -42,6 +43,7 @@ Applied when long routing needs to be done in floor planning. A flip-flop with l
 ### Retiming
 
 Some part of the combinational circuit is moved to the other side of a flip-flop to distribute the delay and increase the operating frequency.
+
 ![Alt text](images/sequential_logic_optimization.png)
 
 
@@ -289,6 +291,7 @@ endmodule
 #### Simulation using Iverilog and GTKWave
 
 ![Alt text](images/dff_const1_gtkwave.png)
+
 ![Alt text](images/dff_const1_gtkwave_fullscreen.png)
 
 #### Yosys Flow
@@ -325,6 +328,7 @@ endmodule
 #### Simulation using Iverilog and GTKWave
 
 ![Alt text](images/dff_const2_gtkwave.png)
+
 ![Alt text](images/dff_const2_gtkwave_fullscreen.png)
 
 #### Yosys Flow
@@ -373,6 +377,7 @@ endmodule
 #### Simulation using Iverilog and GTKWave
 
 ![Alt text](images/dff_const3_gtkwave.png)
+
 ![Alt text](images/dff_const3_gtkwave_fullscreen.png)
 
 #### Yosys Flow
@@ -421,6 +426,7 @@ endmodule
 #### Simulation using Iverilog and GTKWave
 
 ![Alt text](images/dff_const4_gtkwave.png)
+
 ![Alt text](images/dff_const4_gtkwave_fullscreen.png)
 
 #### Yosys Flow
@@ -468,6 +474,7 @@ endmodule
 #### Simulation using Iverilog and GTKWave
 
 ![Alt text](images/dff_const5_gtkwave.png)
+
 ![Alt text](images/dff_const5_gtkwave_fullscreen.png)
 
 #### Yosys Flow
@@ -509,6 +516,7 @@ endmodule
 Here, the bit count[0] have a direct impact on the primary output 'q' and the remaining bits count[2:1] doesn't have a direct impact on the primary output. so the optimization is done such that the flip-flops for count[2:1] is eliminated. And it is realized that the output 'q' is toggled every clock cycle. So the synthesized circuit is having only one D flip-flop:
 
 ![Alt text](images/counter_opt_synthesis.png)
+
 ![Alt text](images/counter_opt_netlist.png)
 
 
@@ -532,5 +540,7 @@ endmodule
 Here, the primary outpur 'q' is dependent on all the bits of 'count' (count[2:0]). Thus the Flip-flops associated with these bits are instantiated:
 
 ![Alt text](images/counter_opt2_synthesis.png)
+
 ![Alt text](images/counter_opt2_netlist.png)
+
 ![Alt text](images/counter_opt2_netlist_fullscreen.png)
