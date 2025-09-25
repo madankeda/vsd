@@ -419,10 +419,6 @@ end
 endmodule
 ```
 
-#### Equivalent Circuit Implementation
-
-![Alt text](images/dff_const4_implementation.png)
-
 #### Simulation using Iverilog and GTKWave
 
 ![Alt text](images/dff_const4_gtkwave.png)
@@ -466,10 +462,6 @@ end
 
 endmodule
 ```
-
-#### Equivalent Circuit Implementation
-
-![Alt text](images/dff_const5_implementation.png)
 
 #### Simulation using Iverilog and GTKWave
 
