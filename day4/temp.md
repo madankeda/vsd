@@ -61,7 +61,7 @@ iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
 gtkwave tb_ternary_operator_mux.vcd
 ```
 
-![Alt text](images/ternary_operator_mux_gtkwave_fullsc_bef_syn.png)
+![Alt text](images/ternary_operator_mux_gtkwave_bef_syn.png)
 
 
 #### Synthesis using Yosys:
@@ -87,18 +87,18 @@ iverilog ../my_lib/verilog_model/primitives.v  ../my_lib/verilog_model/sky130_fd
 gtkwave tb_ternary_operator_mux.vcd
 ```
 
-![Alt text](images/ternary_operator_mux_gtkwave_fullsc_aft_syn.png)
+![Alt text](images/ternary_operator_mux_gtkwave_aft_syn.png)
 
 
 #### Comparing simulation results:
 
 before synthesis:
 
-![Alt text](images/ternary_operator_mux_gtkwave_bef_syn.png)
+![Alt text](images/ternary_operator_mux_gtkwave_fullscr_bef_syn.png)
 
 after synthesis:
 
-![Alt text](images/ternary_operator_mux_gtkwave_aft_syn.png)
+![Alt text](images/ternary_operator_mux_gtkwave_fullscr_aft_syn.png)
 
 Both the simulation results are same. 
 
@@ -130,7 +130,7 @@ iverilog bad_mux.v tb_bad_mux.v
 gtkwave tb_bad_mux.vcd
 ```
 
-![Alt text](images/bad_mux_gtkwave_fullsc_bef_syn.png)
+![Alt text](images/bad_mux_gtkwave_bef_syn.png)
 
 
 #### Synthesis using Yosys:
@@ -156,18 +156,18 @@ iverilog ../my_lib/verilog_model/primitives.v  ../my_lib/verilog_model/sky130_fd
 gtkwave bad_mux.vcd
 ```
 
-![Alt text](images/bad_mux_gtkwave_fullsc_aft_syn.png)
+![Alt text](images/bad_mux_gtkwave_aft_syn.png)
 
 
 #### Comparing simulation results:
 
 before synthesis:
 
-![Alt text](images/bad_mux_gtkwave_bef_syn.png)
+![Alt text](images/bad_mux_gtkwave_fullscr_bef_syn.png)
 
 after synthesis:
 
-![Alt text](images/bad_mux_gtkwave_aft_syn.png)
+![Alt text](images/bad_mux_gtkwave_fullscr_aft_syn.png)
 
 Both the simulation results are not same. The output of the multiplexer before synthesis, changes only when the 'sel' signal changes its value. But in the simulation of its netlist, the output signal changes its value whenever any of the input signal (i0,i1 or sel) changes its value.
 
@@ -203,7 +203,7 @@ iverilog blocking_caveat.v tb_blocking_caveat.v
 gtkwave tb_blocking_caveat.vcd
 ```
 
-![Alt text](images/blocking_caveat_gtkwave_fullsc_bef_syn.png)
+![Alt text](images/blocking_caveat_gtkwave_bef_syn.png)
 
 
 #### Synthesis using Yosys:
@@ -229,18 +229,18 @@ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_
 gtkwave tb_blocking_caveat.v
 ```
 
-![Alt text](images/blocking_caveat_gtkwave_fullsc_aft_syn.png)
+![Alt text](images/blocking_caveat_gtkwave_aft_syn.png)
 
 
 #### Comparing simulation results:
 
 before synthesis:
 
-![Alt text](images/blocking_caveat_gtkwave_bef_syn.png)
+![Alt text](images/blocking_caveat_gtkwave_fullscr_bef_syn.png)
 
 after synthesis:
 
-![Alt text](imagesblocking_caveat_gtkwave_aft_syn.png)
+![Alt text](imagesblocking_caveat_gtkwave_fullscr_aft_syn.png)
 
 The output of the design before synthesis depends on the past values of 'x'. This mimics the flop behavior.
 However the output of the synthesized netlist is dependent only on the present values of 'x'. 
