@@ -1,1 +1,41 @@
 
+# Day 4 - GLS, Blocking vs Non-blocking and Synthesis-Simulation Mismatch
+
+## 1. GLS, Synthesis-Simulation Mismatch and Blocking/Non-blocking Statements
+
+In GLS, the generated netlist is the Design under test. Since the functionality, pins and ports of the initial design and its netlist are same, we can utilize the same testbench that we have written before for initial RTL design.
+
+GLS also ensures that the timing of design is met.
+
+### GLS Using Iverilog
+
+![Alt text](images/GLS_using_iverilog.png)
+
+---
+
+## Synthesis-Simulation Mismatch
+
+Synthesis simulation mismatch occures due to the following reasons:
+
+* Missings sensitivity list
+* Incorrect use of blocking and non-blocking assignments
+* non-standard verilog coding
+
+### Missing Sensitivity List
+
+When we write an always block with incomplete sensitivity. That is, in the below example, the code on the left evaluates the code inside always block only when 'sel' signal changes. It doesn’t evaluate the output even when input signals `i0` or `i1` changes.
+But the code on the right evaluates the output whenever any of the input signal changes its value.
+
+![Alt text](images/GLS_using_iverilog.png)
+
+### Blocking vs Non-blocking Assignments
+
+Sequential circuits should use non-blocking assignments.
+
+* **Blocking statements (`=`)** are executed in the written order.
+* **Non-blocking assignments (`<=`)** are executed in parallel by the following method:
+
+  1. First the RHS of all non-blocking statements is evaluated.
+  2. Then the LHS of all non-blocking statements is assigned the evaluated RHS value.
+
+  ![Alt text](images/blocking_vs_non_blocking.png)
