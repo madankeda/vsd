@@ -94,11 +94,11 @@ gtkwave tb_ternary_operator_mux.vcd
 
 before synthesis:
 
-![Alt text](images/ternary_operator_mux_gtkwave_fullscr_bef_syn.png)
+![Alt text](images/ternary_operator_mux_gtkwave_fullsc_bef_syn.png)
 
 after synthesis:
 
-![Alt text](images/ternary_operator_mux_gtkwave_fullscr_aft_syn.png)
+![Alt text](images/ternary_operator_mux_gtkwave_fullsc_aft_syn.png)
 
 Both the simulation results are same. 
 
@@ -163,11 +163,11 @@ gtkwave bad_mux.vcd
 
 before synthesis:
 
-![Alt text](images/bad_mux_gtkwave_fullscr_bef_syn.png)
+![Alt text](images/bad_mux_gtkwave_fullsc_bef_syn.png)
 
 after synthesis:
 
-![Alt text](images/bad_mux_gtkwave_fullscr_aft_syn.png)
+![Alt text](images/bad_mux_gtkwave_fullsc_aft_syn.png)
 
 Both the simulation results are not same. The output of the multiplexer before synthesis, changes only when the 'sel' signal changes its value. But in the simulation of its netlist, the output signal changes its value whenever any of the input signal (i0,i1 or sel) changes its value.
 
@@ -236,11 +236,11 @@ gtkwave tb_blocking_caveat.v
 
 before synthesis:
 
-![Alt text](images/blocking_caveat_gtkwave_fullscr_bef_syn.png)
+![Alt text](images/blocking_caveat_gtkwave_fullsc_bef_syn.png)
 
 after synthesis:
 
-![Alt text](imagesblocking_caveat_gtkwave_fullscr_aft_syn.png)
+![Alt text](imagesblocking_caveat_gtkwave_fullsc_aft_syn.png)
 
 The output of the design before synthesis depends on the past values of 'x'. This mimics the flop behavior.
 However the output of the synthesized netlist is dependent only on the present values of 'x'. 
