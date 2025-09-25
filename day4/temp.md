@@ -240,7 +240,7 @@ before synthesis:
 
 after synthesis:
 
-![Alt text](imagesblocking_caveat_gtkwave_fullsc_aft_syn.png)
+![Alt text](images/blocking_caveat_gtkwave_fullsc_aft_syn.png)
 
 The output of the design before synthesis depends on the past values of 'x'. This mimics the flop behavior.
 However the output of the synthesized netlist is dependent only on the present values of 'x'. 
