@@ -26,7 +26,7 @@ Synthesis simulation mismatch occures due to the following reasons:
 When we write an always block with incomplete sensitivity. That is, in the below example, the code on the left evaluates the code inside always block only when 'sel' signal changes. It doesn’t evaluate the output even when input signals `i0` or `i1` changes.
 But the code on the right evaluates the output whenever any of the input signal changes its value.
 
-![Alt text](images/GLS_using_iverilog.png)
+![Alt text](images/missing_sensitivity.png)
 
 ### Blocking vs Non-blocking Assignments
 
