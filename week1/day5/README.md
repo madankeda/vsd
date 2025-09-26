@@ -25,7 +25,7 @@ module incomp_if (input i0 , input i1 , input i2 , output reg y);
     end
 endmodule
 ```
-The output y changes only when input i0 is high. Other times, the output retains its pervious values.
+The output y changes only when input i0 is high. Other times, the output retains its previous values.
 
 Iverilog and gtkwave output:
 
