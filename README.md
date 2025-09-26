@@ -4,9 +4,9 @@
 
 ## 📌 Submissions
 
-| Day   | Topic                                   |
+| week   | Topic                                   |
 |-------|----------------------------------------|
-| Day 0 | [Tools installation](week0)             |
-| Day 1 | [Introduction to Verilog RTL design and Synthesis](day1) |
+| week 0 | [Tools installation](week0)             |
+| week 1 | [Introduction to Verilog RTL design and Synthesis](week1) |
 
 
