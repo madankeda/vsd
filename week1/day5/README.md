@@ -2,7 +2,7 @@
 
 ## 1. If Case Constructs
 
-The if-else statements need to be handled carefully. If-else statements are usually synthesized to multiplexers. Hence, incomplete if-else statements can lead to inferred latches.
+If-else statements should be approached with care in digital design because they are usually synthesized to multiplexers. Incomplete if-else statements cause the synthesizer to infer latches to retain old values when none of the conditions holds. Inferred latches tend to be bad, as they could lead to glitches and timing issues. To avoid this, all possible conditions should be explicitly addressed or default values should be assigned. Well-structured if-else statements create  combinational logic with no undesired storage elements.
 
 ![Alt text](images/incomplete_if_else.png)
 
