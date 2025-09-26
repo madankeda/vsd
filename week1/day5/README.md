@@ -574,7 +574,9 @@ write_verilog -noattr rca_net.v
 show
 ```
 
-![Alt text](images/rca_synthesis.png)
+![Alt text](images/rca_synthesis1.png)
+
+![Alt text](images/rca_synthesis1.png)
 
 ![Alt text](images/rca_netlist.png)
 
