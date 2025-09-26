@@ -196,7 +196,7 @@ show
 
 ![Alt text](images/comp_case_netlist.png)
 
-
+![Alt text](images/comp_case_eq_circuit.png)
 
 
 #### Consider the given design partial_case_assign.v :
@@ -250,7 +250,7 @@ show
 
 ![Alt text](images/partial_case_assign_netlist.png)
 
-
+![Alt text](images/partial_case_assign_eq_circuit.png)
 
 #### Also, consider the given design bad_case.v :
 
