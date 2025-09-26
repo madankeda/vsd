@@ -576,7 +576,7 @@ show
 
 ![Alt text](images/rca_synthesis1.png)
 
-![Alt text](images/rca_synthesis1.png)
+![Alt text](images/rca_synthesis2.png)
 
 ![Alt text](images/rca_netlist.png)
 
