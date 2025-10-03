@@ -1,3 +1,5 @@
+# Part 1 - BabySoC Fundamentals & Functional Modelling 
+
 ## What is a System on a Chip?
 
 A System on Chip (SoC) is an integrated circuit where all the necessary components of an entire electronic system are integrated on one piece of silicon. Rather than using numerous individual chips, an SoC integrates a general-purpose processor, custom hardware accelerators, on-chip memory, peripheral interfaces, and communication modules as a single integrated design. SoCs minimize circuit board complexity by packing all these functions on a single die.
