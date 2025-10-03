@@ -154,7 +154,7 @@ So, the (Digital-to-Analog Converter) is working correctly and establishes a lin
 
 
 ![Alt text](images/frequency_change.png)
-The PLL Genereates clock signal whose frequency is changing with respect change in REF signal.
+The PLL Genereates clock signal whose frequency is changing with respect change in REF signal (Compare frequency of clock signal in left hand side and right hand side of the cursor).
 
 The output is low when reset is high. So it is active-high reset.
 
