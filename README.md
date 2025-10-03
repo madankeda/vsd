@@ -8,5 +8,5 @@
 |-------|----------------------------------------|
 | week 0 | [Tools installation](week0)             |
 | week 1 | [Introduction to Verilog RTL design and Synthesis](week1) |
-
+| week 2| [BabySoC Fundamentals & Functional Modelling](week2) |
 
