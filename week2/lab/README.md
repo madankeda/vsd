@@ -1,3 +1,4 @@
+# BabySoC Fundamentals & Functional Modelling
 # Part 2 – Labs (Hands-on Functional Modelling)
 
 ## Setting up Project directory
