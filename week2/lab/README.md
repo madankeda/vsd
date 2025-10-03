@@ -146,6 +146,7 @@ The waveforms are explained below.
 ## Observations:
 
 ![Alt text](images/analog_wave_zoomed_in.png)
+
 ![Alt text](images/analog_wave_zoomed_out.png)
 
 As the 10-bit RV_TO_DAC value increases, the Analog OUT output value also increases. Similarly, As the 10-bit RV_TO_DAC value decreases, the Analog OUT output value also decreases.
