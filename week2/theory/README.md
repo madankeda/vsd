@@ -1,4 +1,6 @@
-# Part 1 - BabySoC Fundamentals & Functional Modelling 
+# BabySoC Fundamentals & Functional Modelling 
+
+#  Part 1 – Theory (Conceptual Understanding)
 
 ## What is a System on a Chip?
 
